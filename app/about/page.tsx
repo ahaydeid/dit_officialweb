@@ -10,9 +10,9 @@ export const metadata = {
 export default function About() {
   const teamMembers = [
     { name: "Ahadi", role: "Founder", image: "/ahadi.png" },
-    { name: "Ahadi", role: "Back End Dev", image: null },
-    { name: "Nama Tim #3", role: "Jabatan", image: null },
-    { name: "Nama Tim #4", role: "Jabatan", image: null },
+    { name: "Ahadi", role: "Back End Dev", image: "/ahadi.png" },
+    { name: "Fulan", role: "Front End Dev", image: null },
+    { name: "Fulan", role: "Implementor", image: null },
   ];
 
   return (
@@ -42,7 +42,7 @@ export default function About() {
                 <div className="space-y-8">
                   <div className="flex gap-4">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
                         <Target className="h-6 w-6" />
                       </div>
                     </div>
@@ -55,7 +55,7 @@ export default function About() {
                   </div>
                   <div className="flex gap-4">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-red-500 text-white">
                         <Award className="h-6 w-6" />
                       </div>
                     </div>
@@ -73,7 +73,7 @@ export default function About() {
               </div>
               <div className="relative h-96 bg-gray-200 dark:bg-gray-700 rounded-2xl overflow-hidden shadow-lg">
                 {/* Placeholder for Office/Team Image */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 opacity-80 flex items-center justify-center">
+                <div className="absolute inset-0 bg-red-500 opacity-80 flex items-center justify-center">
                     <span className="text-white text-2xl font-bold">Inovasi Tanpa Batas</span>
                 </div>
               </div>
@@ -93,10 +93,10 @@ export default function About() {
                         { title: "Inovasi", desc: "Selalu beradaptasi dengan teknologi terbaru untuk solusi terbaik.", icon: Target },
                         { title: "Kolaborasi", desc: "Bekerja sama erat dengan klien untuk mencapai tujuan bersama.", icon: Users },
                     ].map((val, idx) => (
-                        <div key={idx} className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                            <val.icon className="w-10 h-10 text-blue-600 mb-4" />
-                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{val.title}</h3>
-                            <p className="text-gray-600 dark:text-gray-400">{val.desc}</p>
+                        <div key={idx} className="bg-red-500 dark:bg-slate-900 p-8 rounded-xl hover:shadow-md transition-shadow">
+                            <val.icon className="w-10 h-10 text-white mb-4" />
+                            <h3 className="text-xl font-bold text-white dark:text-white mb-2">{val.title}</h3>
+                            <p className="text-white dark:text-gray-400">{val.desc}</p>
                         </div>
                     ))}
                 </div>
@@ -124,7 +124,7 @@ export default function About() {
                             )}
                         </div>
                         <h3 className="text-lg font-bold text-gray-900 dark:text-white">{member.name}</h3>
-                        <p className="text-blue-600 dark:text-blue-400">{member.role}</p>
+                        <p className="text-red-600 dark:text-red-400">{member.role}</p>
                     </div>
                 ))}
             </div>
