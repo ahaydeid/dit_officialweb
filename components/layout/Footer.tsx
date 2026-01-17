@@ -35,7 +35,7 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Kontak</h4>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
               <li>Email: info@ditedu.co.id</li>
-              <li>WhatsApp: +62 812-3456-7890</li>
+              <li>WhatsApp: +62 838-9149-5814</li>
             </ul>
           </div>
         </div>

@@ -31,8 +31,8 @@ export default function ContactPage() {
                              <div className="ml-4">
                                  <h3 className="text-lg font-medium text-gray-900 dark:text-white">Alamat Kantor</h3>
                                  <p className="mt-1 text-gray-500 dark:text-gray-400">
-                                     Jl. Contoh Raya No. 123<br />
-                                     Jakarta Selatan, DKI Jakarta 12345<br />
+                                     Jl. Baru Sentiong - Balaraja<br />
+                                     Tangerang, Banten 15610<br />
                                      Indonesia
                                  </p>
                              </div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
                              <div className="ml-4">
                                  <h3 className="text-lg font-medium text-gray-900 dark:text-white">Telepon / WhatsApp</h3>
                                  <p className="mt-1 text-gray-500 dark:text-gray-400">
-                                     +62 812-3456-7890
+                                     +62 838-9149-5814
                                  </p>
                              </div>
                          </div>
