@@ -10,9 +10,9 @@ export const metadata = {
 export default function About() {
   const teamMembers = [
     { name: "Ahadi", role: "Founder", image: "/ahadi.png" },
-    { name: "Ahadi", role: "Back End Dev", image: "/ahadi.png" },
-    { name: "Fulan", role: "Front End Dev", image: null },
-    { name: "Fulan", role: "Implementor", image: null },
+    { name: "Ahadi", role: "Analyst & Back End Dev", image: "/ahadi.png" },
+    { name: "Ahadi", role: "Front End Dev", image: "/ahadi.png" },
+    { name: "Ahadi", role: "Implementor", image: "/ahadi.png" },
   ];
 
   return (
