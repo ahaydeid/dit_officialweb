@@ -10,9 +10,9 @@ export const metadata = {
 export default function About() {
   const teamMembers = [
     { name: "Ahadi", role: "Founder", image: "/ahadi.png" },
-    { name: "Ahadi", role: "Analyst & Back End Dev", image: "/ahadi.png" },
-    { name: "Ahadi", role: "Front End Dev", image: "/ahadi.png" },
-    { name: "Ahadi", role: "Implementor", image: "/ahadi.png" },
+    { name: "Ahadi", role: "Analyst & Back End Dev", image: null },
+    { name: "Fery Setiawan", role: "Front End Dev", image: "fery.jpeg" },
+    { name: "Ahadi", role: "Implementor", image: null },
   ];
 
   return (
@@ -124,7 +124,7 @@ export default function About() {
                             )}
                         </div>
                         <h3 className="text-lg font-bold text-gray-900 dark:text-white">{member.name}</h3>
-                        <p className="text-red-600 dark:text-red-400">{member.role}</p>
+                        <p className="text-sky-700 dark:text-sky-400">{member.role}</p>
                     </div>
                 ))}
             </div>
