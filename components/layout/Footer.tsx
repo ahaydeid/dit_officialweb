@@ -25,9 +25,8 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Legalitas</h4>
             <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
-              <li>NIB: -</li>
-              <li>SK Kemenkumham: -</li>
-              <li>NPWP: -</li>
+              <li>NIB: AHU-047573.AH.01.30. Tahun 2025</li>
+              <li>NPWP: 85.432.255.9-451.000</li>
             </ul>
           </div>
           
