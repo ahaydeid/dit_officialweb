@@ -43,6 +43,92 @@ const featureList = [
     }
 ];
 
+import PricingCarousel from "@/components/sections/PricingCarousel";
+
+const pricingData = [
+    {
+        title: "SMP Basic",
+        price: "Rp 500.000",
+        quota: "100 Siswa",
+        desc: "Paket dasar untuk SMP dengan fitur esensial.",
+        features: [
+            "Manajemen Data Siswa & Guru",
+            "E-Raport K13 & Kurikulum Merdeka",
+            "Cetak Kartu Pelajar",
+            "Laporan Keuangan Dasar",
+        ]
+    },
+    {
+        title: "SMP Premium",
+        price: "Rp 1.200.000",
+        quota: "300 Siswa",
+        desc: "Paket premium SMP dengan fitur lengkap & prioritas support.",
+        isPopular: true,
+        features: [
+            "Semua Fitur Basic",
+            "Mobile App Siswa (Android/iOS)",
+            "Absensi RFID / Fingerprint",
+            "Notifikasi WhatsApp Gateway",
+            "Pembayaran Online (Virtual Account)",
+            "CBT / Ujian Online"
+        ]
+    },
+    {
+        title: "SMA Basic",
+        price: "Rp 600.000",
+        quota: "100 Siswa",
+        desc: "Paket dasar untuk SMA/MA.",
+        features: [
+            "Manajemen Data Siswa & Guru",
+            "E-Raport K13 & Kurikulum Merdeka",
+            "Peminatan & Jurusan",
+            "Laporan Keuangan Dasar",
+        ]
+    },
+    {
+        title: "SMA Premium",
+        price: "Rp 1.500.000",
+        quota: "Semua Fitur",
+        desc: "Solusi lengkap untuk SMA besar dengan kebutuhan kompleks.",
+        isPopular: true,
+        features: [
+            "Semua Fitur Basic",
+            "Mobile App Siswa (Android/iOS)",
+            "Absensi Wajah (Face Rec)",
+            "Notifikasi WhatsApp Ortu",
+            "Manajemen Alumni",
+            "Bank Soal & Tugas Online"
+        ]
+    },
+    {
+        title: "SMK Basic",
+        price: "Rp 750.000",
+        quota: "200 Siswa",
+        desc: "Paket dasar SMK dengan modul PKL dasar.",
+        features: [
+            "Manajemen Data Siswa & Guru",
+            "E-Raport & Transkrip Nilai",
+            "Data Dunia Usaha/Industri (DUDI)",
+            "Jurnal PKL",
+        ]
+    },
+    {
+        title: "SMK Premium",
+        price: "Rp 1.800.000",
+        quota: "Semua Fitur",
+        desc: "Full modul SMK termasuk Bursa Kerja & PKL lengkap.",
+        isPopular: true,
+        features: [
+            "Semua Fitur Basic",
+            "Mobile App Siswa & Guru",
+            "Absensi Magang / PKL (GPS)",
+            "Bursa Kerja Khusus (BKK)",
+            "Ujian Berbasis Komputer (CBT)",
+            "Integrasi Mesin EDC Kantin"
+        ]
+    }
+];
+
 export default function FeaturesPage() {
   return (
     <>
@@ -123,144 +209,16 @@ export default function FeaturesPage() {
 
         {/* Pricing Section */}
         <section className="py-24 bg-slate-50 dark:bg-slate-800/50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Paket Langganan</h2>
-                    <p className="text-gray-500 max-w-2xl mx-auto">Pilih paket yang sesuai dengan jenjang dan kebutuhan sekolah Anda.</p>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {/* SMP Basic */}
-                    <PricingCard 
-                        title="SMP Basic" 
-                        price="Rp 500.000" 
-                        quota="100 Siswa" 
-                        desc="Paket dasar untuk SMP dengan fitur esensial."
-                        features={[
-                            "Manajemen Data Siswa & Guru",
-                            "E-Raport K13 & Kurikulum Merdeka",
-                            "Cetak Kartu Pelajar",
-                            "Laporan Keuangan Dasar",
-                        ]}
-                    />
-                    {/* SMP Premium */}
-                    <PricingCard 
-                        title="SMP Premium" 
-                        price="Rp 1.200.000" 
-                        quota="300 Siswa" 
-                        desc="Paket premium SMP dengan fitur lengkap & prioritas support." 
-                        isPopular
-                        features={[
-                            "Semua Fitur Basic",
-                            "Mobile App Siswa (Android/iOS)",
-                            "Absensi RFID / Fingerprint",
-                            "Notifikasi WhatsApp Gateway",
-                            "Pembayaran Online (Virtual Account)",
-                            "CBT / Ujian Online"
-                        ]} 
-                    />
-                    {/* SMA Basic */}
-                    <PricingCard 
-                        title="SMA Basic" 
-                        price="Rp 600.000" 
-                        quota="100 Siswa" 
-                        desc="Paket dasar untuk SMA/MA." 
-                        features={[
-                            "Manajemen Data Siswa & Guru",
-                            "E-Raport K13 & Kurikulum Merdeka",
-                            "Peminatan & Jurusan",
-                            "Laporan Keuangan Dasar",
-                        ]}
-                    />
-                     {/* SMA Premium */}
-                    <PricingCard 
-                        title="SMA Premium" 
-                        price="Rp 1.500.000" 
-                        quota="Semua Fitur" 
-                        desc="Solusi lengkap untuk SMA besar dengan kebutuhan kompleks." 
-                        isPopular
-                        features={[
-                            "Semua Fitur Basic",
-                            "Mobile App Siswa (Android/iOS)",
-                            "Absensi Wajah (Face Rec)",
-                            "Notifikasi WhatsApp Ortu",
-                            "Manajemen Alumni",
-                            "Bank Soal & Tugas Online"
-                        ]}
-                    />
-                    {/* SMK Basic */}
-                    <PricingCard 
-                        title="SMK Basic" 
-                        price="Rp 750.000" 
-                        quota="200 Siswa" 
-                        desc="Paket dasar SMK dengan modul PKL dasar." 
-                        features={[
-                            "Manajemen Data Siswa & Guru",
-                            "E-Raport & Transkrip Nilai",
-                            "Data Dunia Usaha/Industri (DUDI)",
-                            "Jurnal PKL",
-                        ]}
-                    />
-                    {/* SMK Premium */}
-                    <PricingCard 
-                        title="SMK Premium" 
-                        price="Rp 1.800.000" 
-                        quota="Semua Fitur" 
-                        desc="Full modul SMK termasuk Bursa Kerja & PKL lengkap." 
-                        isPopular
-                        features={[
-                            "Semua Fitur Basic",
-                            "Mobile App Siswa & Guru",
-                            "Absensi Magang / PKL (GPS)",
-                            "Bursa Kerja Khusus (BKK)",
-                            "Ujian Berbasis Komputer (CBT)",
-                            "Integrasi Mesin EDC Kantin"
-                        ]}
-                    />
-                </div>
+            <div className="text-center mb-16">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Paket Langganan</h2>
+                <p className="text-gray-500 max-w-2xl mx-auto px-4">Pilih paket yang sesuai dengan jenjang dan kebutuhan sekolah Anda.</p>
             </div>
+            
+            <PricingCarousel items={pricingData} />
         </section>
 
       </main>
       <Footer />
     </>
-  );
-}
-
-function PricingCard({ title, price, quota, desc, features = [], isPopular = false }: { title: string, price: string, quota: string, desc: string, features?: string[], isPopular?: boolean }) {
-  return (
-    <div className={`p-8 rounded-2xl border flex flex-col relative ${isPopular ? 'bg-white dark:bg-slate-800 border-red-200 dark:border-red-900 shadow-xl scale-105 z-10' : 'bg-white dark:bg-slate-800 border-gray-200 dark:border-gray-700'}`}>
-        {isPopular && (
-            <div className="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg uppercase tracking-wider">
-                Popular
-            </div>
-        )}
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{title}</h3>
-        <div className="flex items-baseline gap-1 my-4">
-            <span className={`text-4xl font-extrabold ${isPopular ? 'text-red-600' : 'text-sky-600'}`}>{price}</span>
-            <span className="text-gray-500">/bulan</span>
-        </div>
-        <div className="flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-300 mb-6">
-            <User size={16} className={isPopular ? "text-red-500" : "text-sky-500"} />
-            <span>Kuota: {quota}</span>
-        </div>
-        <p className="text-gray-500 text-sm mb-6">{desc}</p>
-        
-        {/* Features List */}
-        <div className="flex-grow mb-8 border-t border-gray-100 dark:border-gray-700 pt-6">
-            <ul className="space-y-3">
-                {features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-sm">
-                        <CheckCircle2 size={16} className={`flex-shrink-0 mt-0.5 ${isPopular ? 'text-red-500' : 'text-sky-500'}`} />
-                        <span className="text-gray-600 dark:text-gray-300">{feature}</span>
-                    </li>
-                ))}
-            </ul>
-        </div>
-        
-        <button className={`w-full py-3 rounded-full font-bold transition-all ${isPopular ? 'bg-red-500 cursor-pointer hover:bg-red-600 text-white' : 'bg-sky-500 cursor-pointer hover:bg-sky-600 text-white'}`}>
-            Pilih Paket
-        </button>
-    </div>
   );
 }

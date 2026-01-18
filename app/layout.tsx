@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,7 +52,8 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`} suppressHydrationWarning>
-        <div className="animate-entrance">
+        <AnimatedBackground />
+        <div className="animate-entrance relative z-10">
           {children}
         </div>
         <WhatsAppButton />

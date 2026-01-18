@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function AboutBrief() {
   return (
-    <section className="py-24 bg-white dark:bg-slate-900 border-b border-gray-100 dark:border-gray-800">
+    <section className="py-24 border-b border-gray-100 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
           <div className="lg:col-span-6 order-2 lg:order-1 relative">

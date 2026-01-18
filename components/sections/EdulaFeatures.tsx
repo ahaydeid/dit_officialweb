@@ -48,7 +48,7 @@ const features = [
 
 export default function EdulaFeatures() {
   return (
-    <section className="py-24 bg-gray-50 dark:bg-slate-800/50">
+    <section className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-base font-bold text-red-600 dark:text-red-400 tracking-wider uppercase mb-2">Fitur Lengkap</h2>
@@ -59,10 +59,9 @@ export default function EdulaFeatures() {
             Edula dirancang khusus untuk menangani kompleksitas administrasi sekolah modern.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, idx) => (
-                <div key={idx} className="bg-white dark:bg-slate-800 p-8 rounded-2xl border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                <div key={idx} className="bg-white dark:bg-slate-800 p-6 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                     <div className={`w-14 h-14 rounded-2xl ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                         <feature.icon className="w-7 h-7" />
                     </div>
