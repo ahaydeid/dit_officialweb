@@ -59,7 +59,7 @@ export default function ContactPage() {
                              <div className="ml-4">
                                  <h3 className="text-lg font-medium text-gray-900 dark:text-white">Email</h3>
                                  <p className="mt-1 text-gray-500 dark:text-gray-400">
-                                     info@ditedu.co.id
+                                     info@ditedu.id
                                  </p>
                              </div>
                          </div>
