@@ -69,7 +69,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-               <Link href="/contact" className="px-5 py-2 text-sm font-bold text-white bg-sky-500 hover:bg-sky-600 rounded-full transition-shadow">
+               <Link href="/contact" className="px-5 py-2 text-sm font-bold text-white bg-sky-600 hover:bg-sky-700 rounded-full transition-shadow">
                     Demo Gratis
                </Link>
           </div>
