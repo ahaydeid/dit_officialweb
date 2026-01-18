@@ -1,12 +1,18 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import Typewriter from "@/components/ui/Typewriter";
+import { Fredoka } from "next/font/google";
+
+const fredoka = Fredoka({ 
+  subsets: ["latin"],
+  // No weight needed for variable fonts
+});
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-10 pb-20 lg:pt-20 lg:pb-28">
       {/* Decorative Elements */}
-      <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-100 h-100 bg-sky-500/10 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
@@ -17,19 +23,36 @@ export default function Hero() {
               
             </div>
             
-            <h1 className="text-4xl tracking-tight font-extrabold text-sky-900 dark:text-white sm:text-5xl md:text-6xl mb-6">
-              Kelola Sekolah Jadi <br/>
-              <span className="text-red-600 dark:text-red-500">Lebih Mudah & Modern</span>
+            <h1 className="font-plus-jakarta font-extrabold text-sky-900 dark:text-white mb-6">
+              <span className="block text-2xl sm:text-3xl tracking-wide mb-3">
+                <span className={`${fredoka.className} font-bold`}>Edula</span>
+              </span>
+              <span className="block text-3xl text-sky-900 dark:text-white sm:text-4xl md:text-5xl tracking-tight leading-[1.15]">
+                <Typewriter 
+                  text="Pengelolaan Sekolah"
+                  className="block"
+                  speed={70}
+                  loop={false}
+                  cursor={false} 
+                />
+                <Typewriter 
+                  text="Lebih Efisien & Modern" 
+                  className="block"
+                  speed={70}
+                  delay={1500}
+                  loop={false}
+                />
+              </span>
             </h1>
             
-            <p className="text-lg text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
-              Agar sekolah fokus mengajar, urusan administratif dibuat lebih sederhana.
+            <p className="text-lg sm:text-xl text-gray-500 dark:text-gray-400 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
+              Guru fokus mengajar, urusan administrasi berulang Edula yang bantu.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-xl text-white bg-sky-600 hover:bg-sky-700 transition-all hover:scale-105"
+                className="inline-flex w-1/2 sm:w-auto items-center justify-center px-4 py-3 border border-transparent text-base font-bold rounded-xl text-white bg-sky-600 hover:bg-sky-700 transition-all hover:scale-105 mx-auto sm:mx-0"
               >
                 Coba Demo Gratis
                 <ArrowRight className="ml-2 h-5 w-5" />

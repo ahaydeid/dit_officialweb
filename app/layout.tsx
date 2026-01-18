@@ -1,10 +1,20 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, Fredoka } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import AnimatedBackground from "@/components/ui/AnimatedBackground";
 
 const inter = Inter({ subsets: ["latin"] });
+const plusJakartaSans = Plus_Jakarta_Sans({ 
+  subsets: ["latin"], 
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-plus-jakarta",
+});
+const fredoka = Fredoka({ 
+  subsets: ["latin"], 
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-fredoka",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -51,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased`} suppressHydrationWarning>
+      <body className={`${inter.className} ${plusJakartaSans.variable} ${fredoka.variable} antialiased`} suppressHydrationWarning>
         <AnimatedBackground />
         <div className="animate-entrance relative z-10">
           {children}
