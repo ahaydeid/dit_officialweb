@@ -29,7 +29,7 @@ export default function Hero() {
               </span>
               <span className="block text-3xl text-sky-900 dark:text-white sm:text-4xl md:text-5xl tracking-tight leading-[1.15]">
                 <Typewriter 
-                  text="Pengelolaan Sekolah"
+                  text="Kelola Sekolah"
                   className="block"
                   speed={70}
                   loop={false}
