@@ -48,8 +48,8 @@ import PricingCarousel from "@/components/sections/PricingCarousel";
 const pricingData = [
     {
         title: "SMP Basic",
-        price: "Rp 500.000",
-        quota: "100 Siswa",
+        price: "Rp 150.000",
+        quota: "<300 Siswa",
         desc: "Paket dasar untuk SMP dengan fitur esensial.",
         features: [
             "Manajemen Data Siswa & Guru",
@@ -60,8 +60,8 @@ const pricingData = [
     },
     {
         title: "SMP Premium",
-        price: "Rp 1.200.000",
-        quota: "300 Siswa",
+        price: "Rp 1.500.000",
+        quota: ">1000 Siswa",
         desc: "Paket premium SMP dengan fitur lengkap & prioritas support.",
         isPopular: true,
         features: [
@@ -75,8 +75,8 @@ const pricingData = [
     },
     {
         title: "SMA Basic",
-        price: "Rp 600.000",
-        quota: "100 Siswa",
+        price: "Rp 150.000",
+        quota: "<300 Siswa",
         desc: "Paket dasar untuk SMA/MA.",
         features: [
             "Manajemen Data Siswa & Guru",
@@ -88,7 +88,7 @@ const pricingData = [
     {
         title: "SMA Premium",
         price: "Rp 1.500.000",
-        quota: "Semua Fitur",
+        quota: ">1000 Siswa",
         desc: "Solusi lengkap untuk SMA besar dengan kebutuhan kompleks.",
         isPopular: true,
         features: [
@@ -102,8 +102,8 @@ const pricingData = [
     },
     {
         title: "SMK Basic",
-        price: "Rp 750.000",
-        quota: "200 Siswa",
+        price: "Rp 150.000",
+        quota: "<300 Siswa",
         desc: "Paket dasar SMK dengan modul PKL dasar.",
         features: [
             "Manajemen Data Siswa & Guru",
@@ -115,8 +115,8 @@ const pricingData = [
     {
         title: "SMK Premium",
         price: "Rp 1.800.000",
-        quota: "Semua Fitur",
-        desc: "Full modul SMK termasuk Bursa Kerja & PKL lengkap.",
+        quota: ">1000 Siswa",
+        desc: "Solusi lengkap untuk SMK dengan modul PKL lengkap.",
         isPopular: true,
         features: [
             "Semua Fitur Basic",
